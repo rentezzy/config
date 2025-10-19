@@ -8,6 +8,21 @@
   };
 
   programs.home-manager.enable = true;
+  programs.zsh = {
+    enable = true;
+
+    shellAliases = {  
+      tt = "if [ -z \"$TMUX\" ]; then tmux attack \; choose=tree -sw; else tmux choose-tree -sw; fi";
+      switch = "sudo darwin-rebuild switch --flake ~/config && source ~/.zshrc && clear";
+ 
+    };
+    
+    "oh-my-zsh" = {
+      enable = true;
+      plugins = [ "git" ];
+      theme = "robbyrussell";
+    };
+  };
   
   programs.git = {
     enable = true;
@@ -21,4 +36,5 @@
       push.autoSetupRemote = true;
     };
   };
-}
+  
+  }
