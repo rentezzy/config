@@ -3,17 +3,29 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
-    nix-darwin.url = "github:nix-darwin/nix-darwin/master";
-    nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
+    nix-darwin = { 
+      url = "github:nix-darwin/nix-darwin/master";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    home-manager = {
+      url = "github:nix-community/home-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = inputs@{ self, nix-darwin, nixpkgs }:
+  outputs = inputs@{ self, nix-darwin, nixpkgs, home-manager }:
   let
     configuration = { pkgs, ... }: {
+      users.users = {
+        ren = {
+          home = "/Users/ren";
+        };
+      };
+
       nixpkgs.config.allowUnfree = true;
 
       environment.systemPackages = [ 
-        pkgs.git
+       
       ];
 
       # Necessary for using flakes on this system.
@@ -32,7 +44,15 @@
   in
   {
     darwinConfigurations."ren-air" = nix-darwin.lib.darwinSystem {
-      modules = [ configuration ];
+      modules = [ 
+        configuration
+        home-manager.darwinModules.home-manager {
+          home-manager.users.ren = import ./home.nix; 
+          home-manager.useGlobalPkgs = true;
+	  home-manager.useUserPackages = true;
+	  home-manager.verbose = true;
+        }
+      ];
     };
   };
 }
