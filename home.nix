@@ -7,6 +7,10 @@
     EDITOR = "vim";
   };
 
+  home.packages = with pkgs; [
+    gnupg
+  ];
+
   programs.home-manager.enable = true;
   programs.zsh = {
     enable = true;
@@ -34,7 +38,13 @@
 
     extraConfig = {
       push.autoSetupRemote = true;
+      user.signingKey = "3DB619E96CE5C4DC";
+      commit.gpgSign = true;
     };
   };
   
-  }
+  programs.chromium = {
+    enable = true;
+    package = pkgs.google-chrome;
+  };
+}
