@@ -63,6 +63,9 @@
       window-padding-y = 0;
       window-padding-balance = false;
       font-feature = "-liga,-calt";
+
+      cursor-style = "block";
+      cursor-style-blink = true;
     };
   };
 
