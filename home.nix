@@ -76,4 +76,8 @@
     keyMode = "vi";
     mouse = true;
   };
+  
+  programs.btop = {
+    enable = true;
+  };
 }
