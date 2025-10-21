@@ -16,7 +16,7 @@
     enable = true;
 
     shellAliases = {  
-      tt = "if [ -z \"$TMUX\" ]; then tmux attack \; choose=tree -sw; else tmux choose-tree -sw; fi";
+      tt = "if [ -z \"$TMUX\" ]; then tmux attach \; choose=tree -sw; else tmux choose-tree -sw; fi";
       switch = "sudo darwin-rebuild switch --flake ~/config && source ~/.zshrc && clear";
  
     };
@@ -64,5 +64,13 @@
       window-padding-balance = false;
       font-feature = "-liga,-calt";
     };
+  };
+
+  programs.tmux = {
+    enable = true;
+
+    clock24 = true;
+    keyMode = "vi";
+    mouse = true;
   };
 }
