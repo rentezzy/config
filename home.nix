@@ -47,4 +47,22 @@
     enable = true;
     package = pkgs.google-chrome;
   };
+
+  programs.ghostty = {
+    enable = true;
+    package = null;
+
+    enableZshIntegration = true;
+
+    settings = {
+      theme = "Raycast Dark";
+      selection-foreground = "#FDFDFD";
+      selection-background = "#F57FFF";
+      background-opacity = 0.9;
+      background-blur = 14;
+      window-padding-y = 0;
+      window-padding-balance = false;
+      font-feature = "-liga,-calt";
+    };
+  };
 }
