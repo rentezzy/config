@@ -7,8 +7,11 @@
     EDITOR = "vim";
   };
 
+  home.shell.enableZshIntegration = true;
   home.packages = with pkgs; [
     gnupg
+    gh
+    pnpm
   ];
 
   programs.home-manager.enable = true;
@@ -78,6 +81,21 @@
   };
   
   programs.btop = {
+    enable = true;
+  };
+
+  programs.mise = {
+    enable = true;
+
+    globalConfig = {
+      tools = {
+        node = "lts";
+        python = "latest";
+      };
+    };
+  };
+
+  programs.bun = {
     enable = true;
   };
 }
