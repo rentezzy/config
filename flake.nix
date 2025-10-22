@@ -42,6 +42,8 @@
       # The platform the configuration will be used on.
       nixpkgs.hostPlatform = "aarch64-darwin";
 
+      system.defaults = import ./defaults.nix;
+
       homebrew = {
         enable = true; 
         onActivation.cleanup = "uninstall"; 
