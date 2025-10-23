@@ -1,4 +1,4 @@
-{  config, pkgs, ... }: {
+{  config, pkgs, lib, ... }: {
   home.username = "ren";
 
   home.stateVersion = "25.05";
@@ -12,6 +12,7 @@
     gnupg
     gh
     pnpm
+    code-cursor
   ];
 
   programs.home-manager.enable = true;
@@ -100,4 +101,6 @@
   };
 
   programs.aerospace = import ./aerospace/aerospace.nix { pkgs = pkgs; };
+
+  imports = [ ./code/cursor.nix ];
 }
