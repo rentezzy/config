@@ -1,17 +1,11 @@
 {
   "editor.fontFamily": "'JetBrainsMonoNL Nerd Font Mono Regular', 'monospace', monospace",
-  "pomodoro.texts": {
-    "notification": "Pomodoro %started{%work{Work}%break{Break}%longBreak{Long Break}}%paused{Paused}%reset{Reset}",
-    "statusbar": "⊹%paused{ /* }%work{ Work  %task/%set %minute:%second}%break{ Break  %task/%set %minute:%second}%longBreak{ Long Break  %task/%set %minute:%second}%paused{ */}",
-    "tooltip": "Pomodoro %started{Pause}%paused{Resume}%reset{Start}"
-  },
   "[markdown]": {
     "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "prettier.resolveGlobalModules": true,
   "git.confirmSync": false,
   "explorer.confirmDelete": false,
   "[json]": {
@@ -20,83 +14,9 @@
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[dockercompose]": {
-    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
-  },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "cSpell.userWords": [
-    "aceternity",
-    "actionsheet",
-    "apos",
-    "automations",
-    "Ayrshare",
-    "BIENE",
-    "bitsumishi",
-    "clsx",
-    "codegen",
-    "compliable",
-    "Datepicker",
-    "dtos",
-    "fastestsmallesttextencoderdecoder",
-    "favourite",
-    "Favourites",
-    "featurebase",
-    "Fishermann",
-    "fullname",
-    "gapi",
-    "Gluestack",
-    "hookform",
-    "hstack",
-    "knowledges",
-    "Leaderboard",
-    "lucide",
-    "Mapbox",
-    "mdxeditor",
-    "Meteo",
-    "nativewind",
-    "nestjs",
-    "nextjs",
-    "nextui",
-    "nure",
-    "Nutri",
-    "OpenMeteoApiModule",
-    "Parens",
-    "partialize",
-    "predev",
-    "Pressable",
-    "QRCODE",
-    "Recepie",
-    "roboto",
-    "shadcn",
-    "signup",
-    "Sonner",
-    "Statly",
-    "stylex",
-    "Supabase",
-    "svgr",
-    "Swipeable",
-    "Synthetize",
-    "tailwindcss",
-    "tamagui",
-    "tanstack",
-    "tlds",
-    "Topbar",
-    "trivago",
-    "uidotdev",
-    "unreact",
-    "UNREPLIED",
-    "Upsell",
-    "Upsert",
-    "usehooks",
-    "Userback",
-    "vaul",
-    "Vercel",
-    "vstack",
-    "wavesurfer",
-    "zustand"
-  ],
   "explorer.confirmDragAndDrop": false,
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -104,7 +24,6 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "graphql-config.load.rootDir": "./mobile",
   "editor.linkedEditing": true,
   "window.customMenuBarAltFocus": false,
   "window.customTitleBarVisibility": "windowed",
@@ -114,8 +33,6 @@
   "editor.fontSize": 13,
   "extensions.ignoreRecommendations": true,
   "prisma.showPrismaDataPlatformNotification": false,
-  "cSpell.ignoreWords": ["Curtosi", "Emiliano", "Recepies"],
-  "github.copilot.editor.enableAutoCompletions": true,
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -133,29 +50,10 @@
   "search.quickOpen.history.filterSortOrder": "recency",
   "emmet.showExpandedAbbreviation": "never",
   "chat.commandCenter.enabled": false,
-  "git-autoconfig.configList": [
-    {},
-    {
-      "user.email": "nikita.dzhezhela@nure.ua",
-      "user.name": "Nikita Dzhezhela"
-    },
-    {
-      "user.email": "nikita.dzhezhela@sysgears.com",
-      "user.name": "Nikita Dzhezhela"
-    },
-    {
-      "user.email": "dzhezhela.nikita@gmail.com",
-      "user.name": "Nikita Dzhezhela"
-    }
-  ],
   "editor.accessibilitySupport": "off",
   "svg.preview.mode": "svg",
   "cursor.cpp.disabledLanguages": ["plaintext", "markdown", "scminput"],
   "cursor.cpp.enablePartialAccepts": true,
-  "githubPullRequests.pullBranch": "never",
-  "githubPullRequests.createOnPublishBranch": "never",
-  "kotlin.languageServer.enabled": false,
-  "kotlin.debugAdapter.enabled": false,
   "evenBetterToml.formatter.alignEntries": true,
   "evenBetterToml.formatter.alignComments": true,
   "evenBetterToml.formatter.arrayAutoCollapse": true,
@@ -171,7 +69,6 @@
   "editor.lineNumbers": "relative",
   "cursor.composer.usageSummaryDisplay": "always",
   "typescript.tsserver.maxTsServerMemory": 4000,
-  "typescript.tsdk": "/Users/ren/.nvm/versions/node/v22.15.0/lib/node_modules/typescript/lib",
   "workbench.productIconTheme": "icons-carbon",
-  "workbench.colorTheme": "Palenight (Mild Contrast)"
+  "workbench.colorTheme": "Owlet (Palenight)"
 }
