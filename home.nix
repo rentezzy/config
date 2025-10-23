@@ -98,4 +98,6 @@
   programs.bun = {
     enable = true;
   };
+
+  programs.aerospace = import ./aerospace.nix { pkgs };
 }
