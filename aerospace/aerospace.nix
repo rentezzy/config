@@ -23,7 +23,7 @@ let
     "alt-shift-equal" = "resize smart +50";
 
     # Workspaces (main)
-    "alt-1" = "workspace 1";
+    alt-1 = "workspace 1";
     "alt-2" = "workspace 2";
     "alt-3" = "workspace 3";
     "alt-4" = "workspace 4";
