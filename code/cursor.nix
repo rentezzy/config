@@ -52,6 +52,7 @@ let
 in
 {
   home.file."./Library/Application Support/Cursor/User/settings.json".source = ./settings.json;
+  home.file."./Library/Application Support/Cursor/User/keybindings.json".source = ./keybindings.json;
 
   home.activation.install-cursor = lib.hm.dag.entryAfter [ "writeBoundary" ] ''
     #!/usr/bin/env bash
