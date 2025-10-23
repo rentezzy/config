@@ -99,5 +99,5 @@
     enable = true;
   };
 
-  programs.aerospace = import ./aerospace.nix { pkgs };
+  programs.aerospace = import ./aerospace/aerospace.nix { pkgs = pkgs; };
 }
