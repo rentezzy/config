@@ -55,7 +55,7 @@
     };
   in
   {
-    darwinConfigurations."ren-air" = nix-darwin.lib.darwinSystem {
+    darwinConfigurations."0x17" = nix-darwin.lib.darwinSystem {
       modules = [ 
         configuration
         home-manager.darwinModules.home-manager {
