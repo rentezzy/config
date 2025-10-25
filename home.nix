@@ -101,5 +101,5 @@
 
   programs.aerospace = import ./aerospace/aerospace.nix { pkgs = pkgs; };
 
-  imports = [ ./code/cursor.nix ];
+  programs.vscode = import ./code/cursor.nix { pkgs = pkgs; };
 }

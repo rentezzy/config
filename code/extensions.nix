@@ -16,7 +16,6 @@ with pkgs.vscode-marketplace; [
 
   # GraphQL
   graphql.vscode-graphql
-  graphql.vscode-graphql-syntax
 
   # SVG
   jock.svg

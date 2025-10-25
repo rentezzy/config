@@ -1,11 +1,10 @@
-{ pkgs, lib, ... }:
+{ pkgs, ... }:
 let
   extensions = (import ./extensions.nix) { inherit pkgs; };
   keybindings = import ./keybindings.nix;
   settings = import ./settings.nix;
 in
 {
-  programs.vscode = {
     enable = true;
 
     package = pkgs.code-cursor;
@@ -15,5 +14,4 @@ in
       userSettings = settings;
       extensions = extensions;
     };
-  };
 }
