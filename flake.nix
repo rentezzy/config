@@ -58,6 +58,7 @@
 
         casks = [
           "ghostty"
+          "raycast"
         ];
       };
     };
