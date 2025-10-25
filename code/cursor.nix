@@ -5,13 +5,13 @@ let
   settings = import ./settings.nix;
 in
 {
-    enable = true;
+  enable = true;
 
-    package = pkgs.code-cursor;
+  package = pkgs.code-cursor;
 
-    profiles.default = {
-      keybindings = keybindings;
-      userSettings = settings;
-      extensions = extensions;
-    };
+  profiles.default = {
+    keybindings = keybindings;
+    userSettings = settings;
+    extensions = extensions;
+  };
 }
