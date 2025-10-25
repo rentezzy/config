@@ -11,9 +11,13 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nix-vscode-extensions = {
+      url = "github:nix-community/nix-vscode-extensions";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = inputs@{ self, nix-darwin, nixpkgs, home-manager }:
+  outputs = inputs@{ self, nix-darwin, nixpkgs, home-manager, nix-vscode-extensions }:
   let
     configuration = { pkgs, ... }: {
       users.users = {
@@ -26,6 +30,10 @@
 
       environment.systemPackages = [ 
        
+      ];
+
+      nixpkgs.overlays = [
+        nix-vscode-extensions.overlays.default
       ];
 
       # Necessary for using flakes on this system.

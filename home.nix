@@ -12,7 +12,6 @@
     gnupg
     gh
     pnpm
-    code-cursor
   ];
 
   programs.home-manager.enable = true;
