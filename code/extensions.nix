@@ -28,6 +28,7 @@ with pkgs.vscode-marketplace; [
 
   # Utils
   vscodevim.vim
+  vintharas.learn-vim
 
   wmaurer.change-case
   britesnow.vscode-toggle-quotes
@@ -44,7 +45,17 @@ with pkgs.vscode-marketplace; [
   # Themes
   itsjonq.owlet
   beardedbear.beardedtheme
+  catppuccin.catppuccin-vsc
+  dracula-theme.theme-dracula
+  eliverlara.andromeda
+  jdinhlife.gruvbox
+  mvllow.rose-pine
+  subframe7536.theme-maple
+  whizkydee.material-palenight-theme
+  aetherdes.sakura-aetherdes
 
   # Global Icons
   antfu.icons-carbon
+  file-icons.file-icons
+  catppuccin.catppuccin-vsc-icons
 ]

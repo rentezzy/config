@@ -70,5 +70,5 @@
   "cursor.composer.usageSummaryDisplay" = "always";
   "typescript.tsserver.maxTsServerMemory" = 4000;
   "workbench.productIconTheme" = "icons-carbon";
-  "workbench.colorTheme" = "Owlet (Palenight)";
+  "workbench.colorTheme" = "Palenight (Mild Contrast)";
 }
