@@ -60,6 +60,9 @@
           "ghostty"
           "raycast"
           "mac-mouse-fix"
+
+          "notion"
+          "notion-calendar"
         ];
       };
     };
