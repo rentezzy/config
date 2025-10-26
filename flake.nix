@@ -59,6 +59,7 @@
         casks = [
           "ghostty"
           "raycast"
+          "mac-mouse-fix"
         ];
       };
     };
