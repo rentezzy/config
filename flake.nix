@@ -63,6 +63,10 @@
 
           "notion"
           "notion-calendar"
+
+          "telegram"
+          "spotify"
+          "beekeeper-studio"
         ];
       };
     };
