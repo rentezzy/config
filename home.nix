@@ -12,6 +12,15 @@
     gnupg
     gh
     pnpm
+
+    # Podman
+    podman
+    podman-compose
+    podman-tui
+
+    # Virtualization
+    qemu
+    vfkit
   ];
 
   programs.home-manager.enable = true;
