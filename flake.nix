@@ -67,6 +67,8 @@
           "telegram"
           "spotify"
           "beekeeper-studio"
+          "pritunl"
+          "slack"
         ];
       };
     };
