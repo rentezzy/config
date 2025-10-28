@@ -11,7 +11,6 @@
   home.packages = with pkgs; [
     gnupg
     gh
-    pnpm
 
     # Podman
     podman
@@ -99,6 +98,7 @@
     globalConfig = {
       tools = {
         node = "lts";
+        pnpm = "latest";
         python = "latest";
       };
 

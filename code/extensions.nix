@@ -6,6 +6,7 @@ with pkgs.vscode-marketplace; [
   dbaeumer.vscode-eslint
   prisma.prisma
   esbenp.prettier-vscode
+  biomejs.biome
   yoavbls.pretty-ts-errors
 
   # GO
@@ -16,6 +17,8 @@ with pkgs.vscode-marketplace; [
 
   # GraphQL
   graphql.vscode-graphql
+  graphql.vscode-graphql-syntax
+
 
   # SVG
   jock.svg
@@ -24,6 +27,7 @@ with pkgs.vscode-marketplace; [
   tamasfe.even-better-toml
   vmware.vscode-manifest-yaml
   davidanson.vscode-markdownlint
+  remcohaszing.schemastore
 
   # Utils
   vscodevim.vim
