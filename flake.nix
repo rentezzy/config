@@ -69,6 +69,7 @@
           "beekeeper-studio"
           "pritunl"
           "slack"
+          "zoom"
         ];
       };
     };
