@@ -56,6 +56,11 @@
         enable = true; 
         onActivation.cleanup = "uninstall"; 
 
+        brews = [
+          "gh"
+          "gnupg"
+        ];
+
         casks = [
           "ghostty"
           "raycast"

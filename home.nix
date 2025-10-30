@@ -9,9 +9,6 @@
 
   home.shell.enableZshIntegration = true;
   home.packages = with pkgs; [
-    gnupg
-    gh
-
     # Podman
     podman
     podman-compose
@@ -34,10 +31,11 @@
     
     "oh-my-zsh" = {
       enable = true;
-      plugins = [ "git" ];
+      plugins = [ "git" "brew" ];
       theme = "robbyrussell";
     };
   };
+
   
   programs.git = {
     enable = true;
