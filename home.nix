@@ -40,12 +40,11 @@
   programs.git = {
     enable = true;
 
-    userName = "Nikita Dzhezhela";
-    userEmail = "dzhezhela.nikita@gmail.com";
-
     ignores = [ ".DS_Store" ];
 
-    extraConfig = {
+    settings = {
+      user.name = "Nikita Dzhezhela";
+      user.email = "dzhezhela.nikita@gmail.com";
       push.autoSetupRemote = true;
       user.signingKey = "3DB619E96CE5C4DC";
       commit.gpgSign = true;
