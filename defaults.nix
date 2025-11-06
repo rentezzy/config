@@ -28,7 +28,7 @@
   dock.mru-spaces = false;
   dock.persistent-apps = [
     {
-      app = "/Applications/Safari.app";
+      app = "/Applications/Ghostty.app";
     }
   ];
   dock.show-recents = false;
@@ -49,7 +49,7 @@
   finder._FXSortFoldersFirst = true;
 
   loginwindow.DisableConsoleAccess = true;
-  loginwindow.GuestEnabled = true;
+  loginwindow.GuestEnabled = false;
 
   screensaver.askForPassword = true;
   screensaver.askForPasswordDelay = 300;
