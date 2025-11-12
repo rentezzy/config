@@ -1,7 +1,7 @@
 { pkgs }:
 with pkgs.vscode-marketplace; [
   # JS
-  bbenoist.nix
+  jnoortheen.nix-ide
   bradlc.vscode-tailwindcss
   dbaeumer.vscode-eslint
   prisma.prisma
