@@ -71,4 +71,5 @@
   "typescript.tsserver.maxTsServerMemory" = 4000;
   "workbench.productIconTheme" = "icons-carbon";
   "workbench.colorTheme" = "Palenight (Mild Contrast)";
+  "telemetry.telemetryLevel" = "off";
 }
