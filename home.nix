@@ -1,4 +1,10 @@
-{  config, pkgs, lib, ... }: {
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}:
+{
   home.username = "ren";
 
   home.stateVersion = "25.05";
@@ -17,26 +23,31 @@
     # Virtualization
     qemu
     vfkit
+
+    # Nix
+    nixfmt-rfc-style
   ];
 
   programs.home-manager.enable = true;
   programs.zsh = {
     enable = true;
 
-    shellAliases = {  
+    shellAliases = {
       tt = "if [ -z \"$TMUX\" ]; then tmux attach \; choose=tree -sw; else tmux choose-tree -sw; fi";
       switch = "sudo darwin-rebuild switch --flake ~/config && source ~/.zshrc && clear";
- 
+
     };
-    
+
     "oh-my-zsh" = {
       enable = true;
-      plugins = [ "git" "brew" ];
+      plugins = [
+        "git"
+        "brew"
+      ];
       theme = "robbyrussell";
     };
   };
 
-  
   programs.git = {
     enable = true;
 
@@ -50,7 +61,7 @@
       commit.gpgSign = true;
     };
   };
-  
+
   programs.chromium = {
     enable = true;
     package = pkgs.google-chrome;
@@ -84,7 +95,7 @@
     keyMode = "vi";
     mouse = true;
   };
-  
+
   programs.btop = {
     enable = true;
   };
@@ -101,7 +112,7 @@
 
       settings = {
         idiomatic_version_file_enable_tools = [ "node" ];
-      }; 
+      };
     };
   };
 

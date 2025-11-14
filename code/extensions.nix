@@ -29,8 +29,8 @@ with pkgs.vscode-marketplace; [
   davidanson.vscode-markdownlint
   remcohaszing.schemastore
   
-  # ms-azuretools.vscode-containers
-  # ms-azuretools.vscode-docker
+  # Docker
+  ms-azuretools.vscode-containers
 
   # Utils
   vscodevim.vim

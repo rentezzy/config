@@ -4,6 +4,12 @@
   "[markdown]" = {
     "editor.defaultFormatter" = "DavidAnson.vscode-markdownlint";
   };
+  "[nix]" = {
+    "editor.defaultFormatter" = "jnoortheen.nix-ide";
+  };
+  "[dockerfile]" = {
+    "editor.defaultFormatter" = "ms-azuretools.vscode-containers";
+  };
   "git.confirmSync" = false;
   "explorer.confirmDelete" = false;
   "explorer.confirmDragAndDrop" = false;
@@ -21,7 +27,11 @@
   "emmet.showExpandedAbbreviation" = "never";
   "editor.accessibilitySupport" = "off";
   "svg.preview.mode" = "svg";
-  "cursor.cpp.disabledLanguages" = [ "plaintext" "markdown" "scminput" ];
+  "cursor.cpp.disabledLanguages" = [
+    "plaintext"
+    "markdown"
+    "scminput"
+  ];
   "cursor.cpp.enablePartialAccepts" = true;
   "evenBetterToml.formatter.alignEntries" = true;
   "evenBetterToml.formatter.alignComments" = true;
